@@ -7,6 +7,7 @@ const Navbar = () => (
         <section className="w-[40%] row-container justify-between">
             <NavigationButton name="HOME" path="/"/>
             <NavigationButton name="REPORT" path="/report"/>
+            <NavigationButton name="FORECAST" path="/forecast"/>
             <NavigationButton name="EVACUATE" path="/evacuate"/>
             <NavigationButton name="RESOURCES" path="/resources"/>
             <NavigationButton name="LIVE" path="/live"/>

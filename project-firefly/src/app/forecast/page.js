@@ -1,7 +1,4 @@
 "use client"; // Ensure this component renders only on the client side
-import dynamic from "next/dynamic"; // Import dynamic from next/dynamic
-import DunamicMapComponent from "./DynamicMapComponent"; // Import the DynamicMapComponent
-
 import { useState } from "react"; // Import useState for managing state
 import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css'; // Import Leaflet CSS
@@ -64,6 +61,16 @@ export default function Report() {
     return (
         <div className="main-content"> {/* Main content wrapper */}
             <div className="container"> {/* Container for map and form */}
+                <form onSubmit={handleFormSubmit}>
+                    <input
+                        type="text"
+                        placeholder="Enter location"
+                        value={location}
+                        onChange={handleInputChange} // Handle input changes
+                    />
+                    <button type="submit">Submit</button>
+                </form>
+
                 <MapContainer center={[48.8566, 2.3522]} zoom={13}>
                     <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                     {markers.map((marker, index) => (
