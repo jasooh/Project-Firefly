@@ -21,9 +21,9 @@ export default function Home() {
                         <div className="flex justify-between w-full mt-19.5 relative z-20">
                         <Tooltip>
                             <TooltipTrigger>
-                                <button className="w-52 h-16 bg-black mt-10 mb-5 flex items-center justify-center rounded-md">
+                                <span className="w-52 h-16 bg-black mt-10 mb-5 flex items-center justify-center rounded-md">
                                     <span className="text-white">OUR PURPOSE</span>
-                                </button>
+                                </span>
                             </TooltipTrigger>
                             <TooltipContent>
                                 <p>Our team strives to raise awareness and sense<br />  of emergency regarding forest fires. These tragic<br /> disasters have been overlooked far too many times,<br /> so to combat the lack of importance, our team<br /> developed an alert system to shut down fires before<br /> they can even begin. We believe that each person has<br /> a responsibility to care for the land we live on, so by<br /> creating a forest fire alert system we have gone one<br /> step further to ensure everyone has the power to make<br /> a difference.</p>
@@ -32,9 +32,9 @@ export default function Home() {
                         
                         <Tooltip>
                             <TooltipTrigger>
-                                <button className="w-52 h-16 bg-black mt-10 mb-5 flex items-center justify-center rounded-md">
+                                <span className="w-52 h-16 bg-black mt-10 mb-5 flex items-center justify-center rounded-md">
                                     <span className="text-white">ABOUT OUR DRONES</span>
-                                </button>
+                                </span>
                             </TooltipTrigger>
                             <TooltipContent>
                                 <p>Our drones are skillfully developed to identify any incoming smoke<br /> and/or fires through object detection. Data is then gathered and stored<br /> through sensors, allowing for real time forecasts on temperature levels<br /> and risk levels for any given location.</p>
@@ -43,9 +43,9 @@ export default function Home() {
 
                         <Tooltip>
                             <TooltipTrigger>
-                                <button className="w-60 h-16 bg-black mt-10 mb-5 flex items-center justify-center rounded-md">
-                                    <span className="text-white">THE FURTURE OF SUSTAINABILITY</span>
-                                </button>
+                                <span className="w-60 h-16 bg-black mt-10 mb-5 flex items-center justify-center rounded-md">
+                                    <span className="text-white">THE FUTURE OF SUSTAINABILITY</span>
+                                </span>
                             </TooltipTrigger>
                             <TooltipContent>
                                 <p>As the era of technology continues, we as a community<br />  have the opportunity to make real changes for the betterment<br />  of both the earth and our own well-being. Forests are a vital part of<br /> our everyday lives, playing key roles in biodiversity, the water cycle,<br /> carbon release, air pollution, and much more. By actively protecting<br /> forests from intense fires, we contribute to the overall sustainability<br /> of every living organism while simultaneously increasing a sense of<br /> community and trust amongst civillians.   </p>

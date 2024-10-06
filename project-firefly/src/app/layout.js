@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import {FireDataContext} from "@/app/context/FireDataContext";
 
 export const metadata = {
     title: "PROJECT: Firefly",
@@ -11,7 +12,9 @@ export default function RootLayout({children}) {
         <html lang="en">
             <body className={`dark`}>
                 <Navbar/>
-                {children}
+                <FireDataContext>
+                    {children}
+                </FireDataContext>
             </body>
         </html>
     );

@@ -12,7 +12,7 @@ const NavigationButton = (props) => {
     }
 
     return (
-        <button onClick={handleRedirect}>
+        <button className="hover:text-primary duration-200" onClick={handleRedirect}>
             {props.name}
         </button>
     )
