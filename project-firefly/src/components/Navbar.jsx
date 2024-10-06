@@ -8,7 +8,6 @@ const Navbar = () => (
             <NavigationButton name="HOME" path="/"/>
             <NavigationButton name="REPORT" path="/report"/>
             <NavigationButton name="FORECAST" path="/forecast"/>
-            <NavigationButton name="EVACUATE" path="/evacuate"/>
             <NavigationButton name="RESOURCES" path="/resources"/>
             <NavigationButton name="LIVE" path="/live"/>
         </section>
