@@ -7,7 +7,7 @@ const Navbar = () => (
         <section className="z-100 w-fit font-[2rem] row-container justify-end gap-5">
             <NavigationButton name="HOME" path="/"/>
             <NavigationButton name="REPORT" path="/report"/>
-            <NavigationButton name="EVACUATE" path="/evacuate"/>
+            <NavigationButton name="FORECAST" path="/forecast"/>
             <NavigationButton name="RESOURCES" path="/resources"/>
             <NavigationButton name="LIVE" path="/live"/>
         </section>
