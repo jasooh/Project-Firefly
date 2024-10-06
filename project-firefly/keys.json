@@ -1,0 +1,4 @@
+{
+  "live-stream-endpoint": "http://192.168.221.94:5000/fire-feed",
+  "status-endpoint": "http://192.168.221.94:5000/fire-data"
+}
