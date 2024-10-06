@@ -3,6 +3,16 @@
 import FetchButton from "@/components/FetchButton";
 import {useFireContext} from "@/app/context/FireDataContext";
 
+const get_warning_message = (fire_count) => {
+    if (fire_count <= 100) {
+        return "Little or no fires detected in your area."
+    } else if (fire_count > 100 && fire_count <= 200) {
+        return "Some fires detected in your area - check the app to verify."
+    } else if (fire_count > 200) {
+        return "ATTENTION: Multiple fires detected in your area. Please evacuate immediately."
+    }
+}
+
 export default function Report() {
     const FireData = useFireContext()
 
@@ -10,20 +20,17 @@ export default function Report() {
         <div className="app-container">
             <article>
                 <header className="fit-parent p-[5%]">
-                    <h3>Welcome to the</h3>
+                    <h3>FIREFL.AI</h3>
                     <h1 className="text-primary">
                         <span className="text-white font-extralight">WARNING </span>PAGE
                     </h1>
-                    <h3>Your way of knowing to survive.</h3>
                     {/* Actions */}
                     <article className="mt-10 row-container gap-5">
                         <section className="row-container">
-                            <div
-                                className="w-fit p-10 bg-accent border-accent border rounded-md col-container gap-7">
+                            <div className="w-fit p-10 bg-accent border-accent border rounded-md col-container gap-7">
                                 <h2>CURRENT FIRE STATUS:</h2>
-                                <h3 className="text-primary">No fires detected in your area.</h3>
+                                <h3 className="text-primary leading-6">{get_warning_message(FireData.fireCount)}</h3>
                                 <div className="col-container justify-between">
-                                    <p>Fires spotted by drones: {FireData.fireCount}</p>
                                 </div>
                             </div>
                         </section>
